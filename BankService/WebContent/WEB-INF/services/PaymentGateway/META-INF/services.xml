@@ -1,0 +1,10 @@
+<service name="PaymentGateway" >
+	<Description>
+		Please Type your service description here
+	</Description>
+	<operation name="checkBalance">
+		<messageReceiver  mep="http://www.w3.org/2004/08/wsdl/in-out"  class="org.apache.axis2.rpc.receivers.RPCMessageReceiver"/>
+	</operation>
+
+	<parameter name="ServiceClass" locked="false">com.ebl.PaymentGateway</parameter>
+</service>
